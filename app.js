@@ -14,6 +14,7 @@ var hello = require('./routes/hello');
 // var user = require('./routes/user');
 
 var app = express();
+app.get("/hello/:userName", hello.view);
 
 // all environments
 app.set('port', process.env.PORT || 3000);
